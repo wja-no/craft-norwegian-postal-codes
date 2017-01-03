@@ -21,9 +21,10 @@ Lookup is also available to use in plugins and templates.
 To enable postal place lookup for an entry type, make sure its fields include
 two Plain Text fields (must be fields added directly to the entry type; e.g.
 fields inside matrix blocks are not supported), one with handle `postalCode`
-and one with handle `postalPlace`. Then add the handle of the entry type to the
-config setting `postalPlaceLookupEntryTypes`, in
-`craft/config/norwegianpostalcodes.php`. Example:
+and one with handle `postalPlace`. Then create a file named
+`norwegianpostalcodes.php` in craft/config and add to this file a definition of
+the config setting `postalPlaceLookupEntryTypes` with the handle of the entry
+type. Example (for an entry type with handle 'company'):
 
 ```php
 <?php
